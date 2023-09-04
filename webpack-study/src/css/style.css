@@ -1,0 +1,7 @@
+@import './font.css';
+
+.hello {
+    font-family: 'Mic-icon';
+    color: red;
+    background: url('../images/product.png') no-repeat;
+}

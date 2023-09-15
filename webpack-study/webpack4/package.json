@@ -1,0 +1,18 @@
+{
+  "name": "webpack4",
+  "version": "1.0.0",
+  "description": "a project for study webpack4",
+  "main": "index.js",
+  "scripts": {
+    "base": "webpack ./src/a.js -o ./dist/bundle.js",
+    "loader": "webpack ./src/loader.js -o ./dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.6.0",
+    "style-loader": "^1.3.0",
+    "webpack": "^4.47.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

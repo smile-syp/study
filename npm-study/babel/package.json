@@ -1,0 +1,30 @@
+{
+  "name": "babel-demo",
+  "version": "1.0.0",
+  "description": "a project for study babel",
+  "main": "index.js",
+  "scripts": {
+    "babel-polyfill": "npx babel ./src/polyfill.js -o ./dist/babel/polyfill.js",
+    "webpack-polyfill": "npx webpack ./src/polyfill.js -o ./dist/webpack --output-filename=polyfill.js",
+    "babel-browser": "npx babel ./src/browserslist.js -o ./dist/babel/browserslist.js",
+    "webpack-broswer": "npx webpack ./src/browserslist.js -o ./dist/webpack --output-filename=browserslist.js",
+    "babel-runtime": "npx babel ./src/runtime.js -o ./dist/babel/runtime.js",
+    "webpack-runtime": "npx webpack ./src/runtime.js -o ./dist/webpack --output-filename=runtime.js",
+    "babel-promise": "npx babel ./src/promise.js -o ./dist/babel/promise.js",
+    "webpack-promise": "npx webpack ./src/promise.js -o ./dist/webpack --output-filename=promise.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.17",
+    "@babel/plugin-transform-runtime": "^7.22.15",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/runtime": "^7.22.15",
+    "@babel/runtime-corejs3": "^7.22.15",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "browserslist": [
+    "firefox 30"
+  ]
+}
